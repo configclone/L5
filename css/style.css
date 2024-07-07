@@ -31,13 +31,20 @@ nav .header__right ul li a{
     text-decoration: none;
     color:#333333;
 }
+
+nav .header__right ul li a:hover{
+    opacity:0.6;
+}
+
+
+
+
+
 nav .header__right ul li .header__btn__icon{
     color:#FFFFFF;
     font-weight: bold;
 }
     
-
-
 nav .header__right ul .header__btn{
     padding:16px;
     background-color: #005BAC;
@@ -48,18 +55,34 @@ nav .header__right ul .header__btn{
     position: relative;
 }
 
+.section img{
+    width: 100%;
+    max-width: 100%;
+}
+
 .section .box{
     position: absolute;
-    top:0px;
-    left:410px;
+    top:0%;
+    padding-left:4%;
     display: block;
-    width:420px;
+    width:35%;
 }
+
+
+
+.section .box .icon img{
+    width:100%;
+    max-width: 100%;
+}
+
+
+
 
 .section .box .icon{
     display: flex;
     justify-content: left;
     text-align: center;
+    width:40%;
 }
 
 .section .box .icon p{
@@ -100,7 +123,7 @@ nav .header__right ul .header__btn{
  }
  
  .about .about__information{
-    width: 30%;
+    width:360px;
     margin:0 auto;
     background-color: #0271E0;
     border-radius: 38px;
@@ -108,6 +131,8 @@ nav .header__right ul .header__btn{
  }
 
  .about .about__information a{
+    display:block;
+    padding:20px 60px;
     color:#FFFFFF;
     text-decoration: none;
  }
@@ -125,6 +150,10 @@ nav .header__right ul .header__btn{
     justify-content: space-between;
     border-radius: 38px;
 }
+
+
+
+
 
 .group ul li:nth-child(1){
    padding: 20px 62px 20px 62px;
@@ -150,35 +179,58 @@ nav .header__right ul .header__btn{
     text-decoration: none; 
  }
 
+ .group ul li a:hover{
+    opacity: 0.6;
+}
 
 
-.container{
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    margin: 0 auto;
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
     row-gap:48px;
     column-gap: 40px;
-    max-width: 1500px;
+    max-width: 1240px;
 }
 
-.container .complexBox{
-    display:flex;
-    justify-content: center;
-    flex-wrap:wrap;
-    row-gap:48px;
-    column-gap: 40px;
-    max-width: 1500px;
-}
 
-.container .complexBox .container__image__top,
-.container .complexBox .container__concept__top,
-.container .complexBox .container__image__middle,
-.container .complexBox .container__concept__middle,
-.container .complexBox .container__image__bottom,
-.container .complexBox .container__concept__bottom
+.container .container__image__top,
+.container .container__image__middle,
+.container .container__image__bottom,
+.container .container__concept__top,
+.container .container__concept__middle,
+.container .container__concept__bottom
 {
-    width:48%;
+    width:calc(50% - 40px);
 }
+
+
+
+
+.container .container__image__top img,
+.container .container__image__middle img,
+.container .container__image__bottom img
+{
+    width:100%;
+    max-width: 100%;
+}
+
+
+
 
 
 .label{
@@ -189,19 +241,33 @@ nav .header__right ul .header__btn{
     transform: scale(1.2);
 }
 
-.images .select_tab{
+.images ul{
+    padding: 0;
+    text-align: center;
     display:flex; 
     justify-content:center;
     column-gap: 35px; 
 }
 
-.images .select_tab li
+.images ul li
 {
-    padding: 20px 196px 20px 196px;
+    width:47%;
     list-style-type: none;
 }
 
-.select_container{
+.images ul li:nth-child(1)
+{
+ background-color: #F2F9FF;   
+}
+
+.images ul li:nth-child(2)
+{
+ background-color: #F0F0F0;   
+}
+
+
+.images .select_container{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -209,6 +275,39 @@ nav .header__right ul .header__btn{
     row-gap: 40px;
     column-gap: 31px;
 }
+
+
+.img__top__left img,
+.img__top__right img,
+.img__bottom__left img,
+.img__bottom__right img,
+.image__top__left img,
+.image__top__right img,
+.image__bottom__left img,
+.image__bottom__right img,
+.end__left img,
+.end__right img{
+    width:100%;
+    max-width:100%;
+}
+
+.img__top__left img:hover,
+.img__top__right img:hover,
+.img__bottom__left img:hover,
+.img__bottom__right img:hover,
+.image__top__left img:hover,
+.image__top__right img:hover,
+.image__bottom__left img:hover,
+.image__bottom__right img:hover,
+.end__left img:hover,
+.end__right img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
 
 .product{
     text-align: center;
@@ -323,14 +422,7 @@ table .td_2 {
         background-color: #F0F0F0;
     }
 
-    .select_container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        max-width: 1500px;
-        row-gap: 40px;
-        column-gap: 31px;
-    }
+ 
     
     table.table_1 {
         margin: 0 auto;
@@ -379,7 +471,17 @@ table .td_2 {
         color:#FFFFFF;
     }
 
-    .end__images .end__left .end__title__letf:hover {
+    .end__images .end__left img,
+    .end__images .end__right img
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+
+
+    .end__images .end__left:hover {
         transform: scale(1.2);
     }
 
@@ -393,7 +495,7 @@ table .td_2 {
         color:#FFFFFF;
     }
    
-    .end__images .end__right .end__title__right:hover {
+    .end__images .end__right:hover {
         transform: scale(1.2);
     }
 
@@ -536,7 +638,10 @@ hr{
     body {
       display: block;
       flex-wrap: wrap ;
-      max-width: 768px;
+    }
+
+    .container{
+        display: block;
     }
 
     .group ul {
@@ -546,6 +651,27 @@ hr{
         margin: 0 auto;
     }
     
+    .container .container__image__top,
+    .container .container__image__middle,
+    .container .container__image__bottom,
+    .container .container__concept__top,
+    .container .container__concept__middle,
+    .container .container__concept__bottom
+    {
+        width:calc(100% - 40px);
+        margin: 0 auto;
+    }
+    
+  
+
+    
+
+    .container .complexBox{
+        display:block;
+    }
+
+
+
     .end__images{
         display:block;
     }
@@ -557,6 +683,18 @@ hr{
         width:100%;
     }
     
+    .container .complexBox .container__concept__top,
+    .container .complexBox .container__concept__middle,
+    .container .complexBox .container__concept__bottom,
+    .container .complexBox .container__image__top,
+    .container .complexBox .container__image__middle,
+    .container .complexBox .container__image__bottom
+    {
+        width:96%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .container  .complexBox:nth-child(2n)
     {
         flex-direction: column-reverse;
@@ -565,12 +703,15 @@ hr{
     .toggle-btn{
         display: flex;
     }
-
-    #mask.open{
-        display: block;
-        width:100%;
-        height:100%;
-    }
  
   }
 
+  @media screen and (max-width: 1080px) {
+    .group ul {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+  }
