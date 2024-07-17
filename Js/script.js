@@ -43,3 +43,34 @@ let btn = document.querySelector(".toggle-btn");
 btn.onclick = ()=>{
     nav.classList.toggle("open");
 }
+
+
+
+
+
+let navAreaBotton_reason = document.querySelector(".link__top");
+
+let navAreaBotton_course = document.querySelector(".link__middle");
+
+let navAreaBotton_product = document.querySelector(".link__bottom");
+
+
+
+
+navAreaBotton_reason.addEventListener("click",function(){
+    
+    navArea.style.display="none";
+})
+
+
+
+navAreaBotton_course.addEventListener("click",function(){
+    
+    navArea.style.display="none";
+})
+
+
+navAreaBotton_product.addEventListener("click",function(){
+    
+    navArea.style.display="none";
+})
