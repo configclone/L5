@@ -13,7 +13,9 @@ html{
 
 
 
-
+.lead__sp{
+    display: none;
+}
 
 
 
@@ -26,6 +28,7 @@ nav {
     justify-content: space-between;
     margin: -2px 378px;
     align-items: center;
+    z-index: 10;
 }
 
 nav ul{
@@ -133,6 +136,31 @@ nav .header__right ul .header__btn{
     margin:-5px 13px;
     margin-bottom: 31px;
 }
+
+
+
+
+.section .section__box .section__box__top .section__box__top__text{
+    width:34.3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section .section__box .section__box__top .section__box__top__img img
 {
@@ -390,7 +418,7 @@ p span:nth-child(3){
 
 
 .group ul li:nth-child(1){
-   padding: 15px 60px 15px 60px;
+   padding: 15px 59px 15px 59px;
    background-color: #77CB33;
    align-items: center; 
    letter-spacing: 0.1em;
@@ -451,17 +479,6 @@ p span:nth-child(3){
 }
 
 
-.container:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -481,6 +498,15 @@ p span:nth-child(3){
 {
     width:calc(50% - 60px);
 }
+
+.container .container__image img
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
 
 
 
@@ -880,6 +906,16 @@ s
         padding: 56px;
      }
     
+
+
+
+
+
+
+
+
+
+
      .contact .nyuugaku_kenntou{
         margin:0 auto;
        
@@ -1280,20 +1316,111 @@ hr{
       flex-wrap: wrap ;
     }
 
+    body{min-width: 650px;} 
+    
+
+.menu{display: none;}
+
+.section .lead__sp{
+    display: block;
+}
+
+.section .lead__pc{
+    display: none;
+}
+
+
+.header__sp .header__sp__logo{
+    position: fixed;
+    top:0px;
+    left:134px;
+    color:#005BAC;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.section .section__box .section__box__text{
+    padding-left: 6.8%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+.container:nth-child(2){
+    flex-direction: row-reverse;
+}
+
     .container{
         display: block;
     }
+
+    .section .section__box .section__box__text p{
+        font-size: 17px;
+    }
+
+    .section .section__box .section__box__top p{
+        font-size: 11px;
+    }
+
+    .section .section__box .section__box__text 
+    .section__box__text__bottom h2, .section .section__box .section__box__text 
+    .section__box__text__bottom h2:nth-child(2)
+    {
+        font-size: 31px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .group ul {
         display: flex;
         flex-wrap: wrap;
         max-width: 340px;
-        margin: 0 auto;
+        margin: 24px auto 0px;
     }
     
+
+    .group ul li:nth-child(1){
+        margin-top: 24px;
+     }
+
     .group ul li:nth-child(2){
         margin: 0px;
+        margin-top: 12px;
      }
+
+     .group ul li:nth-child(3){
+        margin-top: 16px;
+        margin-left: 0px;
+     }
+
+
+     .container{
+        margin: 0 auto;
+        
+    }
+
+
 
 
      .container:nth-child(even) {
@@ -1302,18 +1429,12 @@ hr{
 
 
 
-    .container .container__image__top,
-    .container .container__image__middle,
-    .container .container__image__bottom,
-    .container .container__concept__top,
-    .container .container__concept__middle,
-    .container .container__concept__bottom
-    {
-        width:calc(100% - 40px);
-        margin: 0 auto;
-    }
     
-  
+    .container .container__image,
+    .container .container__concept
+    {
+        width:calc(100% - 60px);
+    }
 
     
 
@@ -1355,7 +1476,7 @@ hr{
         display: flex;
     }
  
-  }
+  
 
 
 
@@ -1374,6 +1495,83 @@ hr{
         margin: 0px; 
      }
 */
+
+.section .section__box .section__box__text 
+.section__box__text__bottom h2
+{
+    margin:0px 0px 11px 0px;
+}
+
+
+.section .section__box{
+    position: absolute;
+    top:0%;
+    display: block;
+    width:35%;
+    margin:8.5% 16.7%;
+}
+
+
+
+
+
+
+.section .section__box .section__box__top
+{
+    
+    margin-bottom: 10px;
+}
+
+
+.section .section__box .section__box__top .section__box__top__img{
+    width:16.5%;
+}
+
+
+
+.section .section__box .section__box__top .section__box__top__text
+.section__box__top__text__top p
+{
+    margin: 5px -8px 25px 0px
+}
+
+
+.section .section__box .section__box__top
+{
+    
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin:-5px 13px;
+    margin-bottom: 0px;
+}
+
+.section .section__box .section__box__top 
+.section__box__top__text .section__box__top__text__bottom{
+    margin: -10px 0px 0px 0px;
+}
+
+.section .section__box .section__box__top 
+.section__box__top__text .section__box__top__text__bottom span:nth-child(1){
+    font-size: 33px;
+    font-family: 'Poppins';
+    color: #F11F8D;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.section .section__box .section__box__top 
+.section__box__top__text .section__box__top__text__bottom span:nth-child(2){
+    font-size: 40px;
+    font-family: 'Poppins';
+    color: #F11F8D;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.section .section__box .section__box__top .section__box__top__text{
+    width:67%;
+}
 
 
 
